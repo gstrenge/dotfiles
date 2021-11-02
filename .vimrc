@@ -246,3 +246,8 @@ nnoremap <silent><nowait> <space>j  :<C-u>CocNext<CR>
 nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list.
 nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
+
+nnoremap <Leader>f : <C-u>ClangFormat<CR>
+
+" Auto formatting a c/cpp file
+let g:clang_format#auto_format=1
