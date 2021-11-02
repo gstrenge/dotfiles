@@ -40,9 +40,3 @@
   ```vim
   :PlugInstall
   ```
-  
- ### Extra:
- Install `cpplint`(I am not sure if this actually does anything)
- ```bash
- pip install cpplint
- ```
