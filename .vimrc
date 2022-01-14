@@ -11,13 +11,19 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'} " Autocompletion
 Plug 'rhysd/vim-clang-format'
 Plug 'jiangmiao/auto-pairs'
 Plug 'https://github.com/vim-scripts/DoxygenToolkit.vim.git'
-
+" Multi Cursor
+Plug 'mg979/vim-visual-multi', {'branch': 'master'}
+Plug 'chriskempson/base16-vim'
 call plug#end()
 
 " Fast escape:
 inoremap jk <esc>
 
-
+" Use the base16 theme
+if filereadable(expand("~/.vimrc_background"))
+    let base16colorspace=256
+    source ~/.vimrc_background
+endif
 
 " Enable syntax highlighting
 syntax on
@@ -64,19 +70,19 @@ set splitright
 
 
 
-if has('termguicolors')
-    set termguicolors
-endif
+"if has('termguicolors')
+    "set termguicolors
+"endif
 
 " For dark version.
-set background=dark
+"set background=dark
 
 " Set contrast.
 " This configuration option should be placed before `colorscheme everforest`.
 " Available values: 'hard', 'medium'(default), 'soft'
-let g:everforest_background = 'soft'
+"let g:everforest_background = 'soft'
 
-colorscheme molokai
+"colorscheme molokai
 
 
 " Map /** to :Dox
